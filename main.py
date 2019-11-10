@@ -80,7 +80,7 @@ class AppWindow(QMainWindow):
         if self.idx < 0:
             self.idx = 0
             return
-        while skip and len(self.png_dict[self.png_list[self.idx]]) == 4:
+        while skip and self.png_dict[self.png_list[self.idx]] != "":
             self.idx -= 1
             if self.idx < 0:
                 self.idx = 0
@@ -95,7 +95,7 @@ class AppWindow(QMainWindow):
         if self.idx >= len(self.png_list):
             self.idx = len(self.png_list)-1
             return
-        while skip and len(self.png_dict[self.png_list[self.idx]]) == 4:
+        while skip and self.png_dict[self.png_list[self.idx]] != "":
             self.idx += 1
             if self.idx >= len(self.png_list):
                 self.idx = len(self.png_list)-1
