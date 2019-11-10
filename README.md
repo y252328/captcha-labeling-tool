@@ -8,7 +8,7 @@
 
 
 ## Requirements
-
+python==3.6
 PySide2==5.13.2
 
 ## Usage
